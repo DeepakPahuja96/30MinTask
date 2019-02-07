@@ -1,0 +1,52 @@
+h1{
+    width: 100%;
+    text-align: center;
+}
+#container{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: darkseagreen;
+    margin: 0 auto;
+}
+#game{
+    position: relative;
+    top: -26px;
+    left:-10px;
+    width: 100%;
+    padding: 10px;
+}
+li{
+    list-style-type: none;
+    width: 100px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    font-size: 60px;
+    line-height: 80px;
+    background-color: darkgrey;
+
+}
+button{
+    height: 100%;
+    width: 100%;
+    background-color: darkgrey;
+}
+button:hover{
+    background-color: darkgrey;
+    color: white;
+}
+.o{
+    color: white !important;
+    text-align: center;
+    font-size: 60px;
+    line-height: 80px;
+    background-color:green;
+  }
+.x{
+    color: white !important;
+    text-align: center;
+    line-height: 80px;
+    font-size: 60px;
+    background-color: red;
+}
