@@ -5,27 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tic Tac Toe Game</title>
-    <link rel="stylesheet" href="main.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="main1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
+    <section id="login">
+        <div id="login_page" class="background_pic">
+            <div class="overlay">
+                <nav class="navbar navbar-default navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="login.html"><img style=" height: 40px; margin-top: -10px;" src="https://hrms.cygrp.com/content/images/logo.png" alt="Cyber Group Logo"></a>
+                    </div>
+                        
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">LogIn</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+    
 
-    <div id="container">
-        <ul class="row" id="game">
-            <li id="one" class="btn span1"><button></button></li>
-            <li id="two" class="btn span1"><button></button></li>
-            <li id="three" class="btn span1"><button></button></li>
-            <li id="four" class="btn span1"><button></button></li>
-            <li id="five" class="btn span1"><button></button></li>
-            <li id="six" class="btn span1"><button></button></li>
-            <li id="seven" class="btn span1"><button></button></li>
-            <li id="eight" class="btn span1"><button></button></li>
-            <li id="nine" class="btn span1"><button></button></li>
-        </ul>
-    </div>  
-    <div>&nbsp;</div>
-    <div class="row"><a href="index.html" id="reset" class="" >Restart</a></div></div> 
+<!-- *******************//////////////***********         NAVBAR ENDED        *******************//////////////***********   -->
+                
+    
+                <div class="container">
+                    <span class="login_heading">LOGIN</span> 
+    
+                    <div class="row">
+                        <div>
+                            <form action=""> 
+                                <div class="form-group">
+                                    <label for="EmailId">Username</label>
+                                    <input type="text" class="form-control" id="Username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Password">Password</label>
+                                    <input type="password" class="form-control" id="Password">
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Remember me</label>
+                                    <a href="#login_page" class="pull-right" style="color:red;  outline-color: none; text-decoration: underline">Forgot Password ?</a>
+                                </div>
+                                <button type="button" class="btn btn-success" style="width:100%;" id="LoginBtn" >Login</button>
+    
+                                <div class="row" id="sign_in_options">
+                                    <div class="col col-lg-6"><button class="sign_in_options_button facebook">Sign In With Facebook</button></div>
+                                    <div class="col col-lg-6"><button class="sign_in_options_button  google">Sign In With Google</button></div>
+                                </div>
+                                <div id="go_to_signup_page">
+                                    <a href="signup.html"  class="go_to_signup_page">Don't Have an Account? Click Here To Make One</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+    
 </body>
 </html>
